@@ -4,7 +4,7 @@
 Made using 'Materialize.css &copy;'.
 
 <b>User's can create quizzes and publish them to a unique URL.</b>
-The above URL can be sent to multiple different users so that they can take the quiz.
+The above URL can be sent to different users so that they can take the quiz.
 
 The user who created the quiz can see all the submissions while the one who answers the quiz can only see his/her score and the maximum score till now.
 
