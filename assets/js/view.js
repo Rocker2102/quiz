@@ -245,6 +245,11 @@ function orderButtons(newIndex = currentIndex) {
 }
 
 $("#submit-btn").click(function() {
+    if(questionsArr.length == 0) {
+        showToast("Load a quiz to perform this!")
+        return;
+    }
+
     if(!window.confirm("Sure to submit answers?")) {
         return;
     }
