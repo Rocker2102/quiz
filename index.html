@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quiz - Create</title>
+        <link rel="icon" href="assets/img/favicon.webp" type="image/webp" />
+        <link rel="stylesheet" href="assets/css/materialize.min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    </head>
+
+    <body>
+        <header class="">
+            <nav class="purple darken-4">
+                <div class="nav-wrapper">
+                    <a class="brand-logo">Quiz</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active waves-effect"><a href="#"><i class="material-icons left">home</i>Home</a></li>
+                        <li class="waves-effect"><a href="javascript:void(0)" onclick="showToast('Quiz Website', 'yellow black-text', 'help_outline')"><i class="material-icons left">info</i>About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <div class="row center-align">
+                <div class="col s6 left-align">
+                    <button class="btn waves-effect green btn-large" id="new-question-btn"><i class="material-icons left">add</i>New Question</button>
+                    <button class="btn waves-effect orange btn-large" id="reset-btn"><i class="material-icons left">restore</i>Reset</button>
+                </div>
+                <div class="input-field col s6 right-align">
+                    <select id="question-list">
+                        <option value="" disabled selected>Choose</option>
+                    </select>
+                    <label>All Questions</label>
+                </div>
+            </div>
+
+            <div class="row center-align red-text">
+                <p><b>Do not refresh the page before publishing the quiz!</b></p>
+                <p>All data will be lost.</p>
+                <p><button class="btn btn-large waves-effect purple" id="quiz-publish-btn"><i class="material-icons left">publish</i>Publish</button></p>
+                <p id="published-link"></p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row">
+                <div class="input-field col s10">
+                    <input id="question" type="text" class="validate">
+                    <label for="question">Question</label>
+                    <span class="helper-text">Type your question here</span>
+                </div>
+                <div class="input-field col s2 right-align">
+                    <button id="delete-current" class="btn-floating waves-effect red tooltipped" data-position="top" data-tooltip="Delete this question"><i class="material-icons">delete</i></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col">
+                    <select id="answer-type">
+                        <option value="1" selected>Single Answer</option>
+                        <option value="2">Multiple Answers</option>
+                    </select>
+                    <label>Type of answer</label>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row">
+                <div class="col s12 center-align"><h4>Options</h4></div>
+            </div>
+
+            <div id="options">
+                <div class="row option-container">
+                    <div class="input-field col s6">
+                        <input type="text">
+                        <label>Option Value</label>
+                    </div>
+                    <div class="input-field col s3 switch center-align">
+                        <label>
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            Answer
+                        </label>
+                    </div>
+                    <div class="col s3 delete-option-container right-align">
+                        <button class="btn-floating waves-effect red delete-option-btn"><i class="material-icons">delete_forever</i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row center-align">
+                <button id="add-option-btn" class="btn-floating btn-large waves-effect indigo"><i class="material-icons">add</i></button>
+                <button id="save-question-btn" class="btn-floating btn-large waves-effect green"><i class="material-icons">save</i></button>
+            </div>
+        </main>
+
+        <footer class="page-footer black">
+        </footer>
+    </body>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</html>

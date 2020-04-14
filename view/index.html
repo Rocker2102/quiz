@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quiz</title>
+        <link rel="icon" href="../assets/img/favicon.webp" type="image/webp" />
+        <link rel="stylesheet" href="../assets/css/materialize.min.css" type="text/css" />
+        <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    </head>
+
+    <body>
+        <header class="">
+            <nav class="purple darken-4">
+                <div class="nav-wrapper">
+                    <a class="brand-logo">Quiz</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="waves-effect"><a href="../"><i class="material-icons left">home</i>Home</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <div class="row center-align" id="my-preloader">
+                <div class='preloader-wrapper big active'><div class='spinner-layer spinner-blue'><div class='circle-clipper left'><div class='circle'></div></div><div class='gap-patch'><div class='circle'></div></div><div class='circle-clipper right'><div class='circle'></div></div></div><div class='spinner-layer spinner-red'><div class='circle-clipper left'><div class='circle'></div></div><div class='gap-patch'><div class='circle'></div></div><div class='circle-clipper right'><div class='circle'></div></div></div><div class='spinner-layer spinner-yellow'><div class='circle-clipper left'><div class='circle'></div></div><div class='gap-patch'><div class='circle'></div></div><div class='circle-clipper right'><div class='circle'></div></div></div><div class='spinner-layer spinner-green'><div class='circle-clipper left'><div class='circle'></div></div><div class='gap-patch'><div class='circle'></div></div><div class='circle-clipper right'><div class='circle'></div></div></div></div>
+            </div>
+            <div class="row center-align">
+                <h4 id="header-text">Please wait...</h4>
+            </div>
+
+            <div class="row center-align red-text">
+                <p><b>Do not refresh the page before submitting!</b></p>
+                <p>All data will be lost.</p>
+                <p><button class="btn btn-large waves-effect purple" id="submit-btn"><i class="material-icons left">send</i>Submit</button></p>
+            </div>
+
+            <div id="quiz-area">
+                <div class="row">
+                    <div class="input-field col s12 m6 left-align">
+                        <select id="question-list">
+                            <option value="" disabled selected>Choose</option>
+                        </select>
+                        <label>All Questions</label>
+                    </div>
+                    <div class="col m6 s12 center-align">
+                        <button class="btn waves-effect red" id="prev-question" disabled><i class="material-icons left">keyboard_arrow_left</i>Previous</button>
+                        <button class="btn waves-effect green" id="next-question"><i class="material-icons right">keyboard_arrow_right</i>Next</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5 id="question"></h5>
+                </div>
+                <div class="row" id="options">
+                    
+                </div>
+                <div class="row">
+                    <button class="btn waves-effect orange" id="clear-answer"><i class="material-icons left">close</i>Clear</button>
+                </div>
+            </div>
+
+            <div id="answer-area">
+                
+            </div>
+        </main>
+
+        <footer class="page-footer black">
+        </footer>
+    </body>
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/materialize.min.js"></script>
+    <script src="../assets/js/view.js"></script>
+</html>
