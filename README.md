@@ -1,7 +1,7 @@
 # Quiz
 
 <b>Web app</b> to create quizzes and answer them.
-Made using 'Materialize.css &copy;'.
+Made using <b>Materialize.css</b> &copy;.
 
 <b>User's can create quizzes and publish them to a unique URL.</b>
 The above URL can be sent to different users so that they can take the quiz.
