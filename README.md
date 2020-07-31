@@ -15,4 +15,4 @@ The user who created the quiz can see all the submissions while the one who answ
 <h4>Last Updated: 14<sup>th</sup> April 2020</h4>
 <p>The sign-in feature is under development. Once the quiz is published, the user is requested to copy the link generated and store it in a safe place (as it won't be available later on).</p>
 
-<a href="https://studentsnitsk.ml/quiz/">Create a quiz now!</a>
+<a href="http://rocker.epizy.com/quiz/">Create a quiz now!</a>
